@@ -1,0 +1,23 @@
+[
+    {
+        "email" : "lucasperez702@gmail.com",
+        "password" : "passpass",
+        "Objects" : {
+            "1" : {
+                "name" : "pc",
+                "longitude" : 47.217220,
+                "latitude" : -1.562805
+            },
+            "2" : {
+                "name" : "portable",
+                "longitude" : 47.217220,
+                "latitude" : -1.572805
+            },
+            "3" : {
+                "name" : "portable",
+                "longitude" : 47.217220,
+                "latitude" : -1.552805
+            }
+        }
+    }
+]
