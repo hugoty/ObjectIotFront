@@ -4,7 +4,7 @@ import Users from '../../db/users.json'
 import {useState} from 'react';
 import {Link, Routes, Route, useNavigate} from 'react-router-dom';
 
-function Login () {
+function Login (props) {
     const navigate = useNavigate();
 
     const [email, setEmail] = useState('');
@@ -14,7 +14,11 @@ function Login () {
         event.preventDefault();
     
         if((Users[0].email === email) && (Users[0].password === password)) {
-            navigate("/map")
+            navigate(`/map/${Users[0].id}`)
+        }
+
+        if((Users[1].email === email) && (Users[0].password === password)) {
+            navigate(`/map/${Users[1].id}`)
         }
         
         setEmail('');
@@ -38,6 +42,17 @@ function Login () {
         <section className="form-section">
             <h1 className="heading">Connexion</h1>
             <p className="label">Se connecter pour pouvoir accéder à la map</p>
+            <div>
+                <span>User 1  </span>
+                <span>Email : user@user.com  </span>
+                <span>Password : passpass</span>
+            </div>
+            <div>
+                <span>User 2  </span>
+                <span>Email : user1@user.com  </span>
+                <span>Password : passpass</span>
+            </div>
+            <span></span>
             <form
             autoComplete="false"
             method="POST"

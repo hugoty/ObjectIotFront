@@ -1,23 +1,52 @@
 [
     {
-        "email" : "lucasperez702@gmail.com",
+        "id" : 0,
+        "email" : "user@user.com",
         "password" : "passpass",
-        "Objects" : {
-            "1" : {
+        "objects" : [
+            {
+                "id" : 1,
                 "name" : "pc",
                 "longitude" : 47.217220,
                 "latitude" : -1.562805
             },
-            "2" : {
+            {
+                "id" : 2,
                 "name" : "portable",
                 "longitude" : 47.217220,
                 "latitude" : -1.572805
             },
-            "3" : {
-                "name" : "portable",
+            {
+                "id" : 3,
+                "name" : "tablet",
                 "longitude" : 47.217220,
                 "latitude" : -1.552805
             }
-        }
+        ]
+    },
+    {
+        "id" : 1,
+        "email" : "user1@user.com",
+        "password" : "passpass",
+        "objects" : [
+            {
+                "id" : 1,
+                "name" : "pc",
+                "longitude" : 47.218220,
+                "latitude" : -1.522805
+            },
+            {
+                "id" : 2,
+                "name" : "portable",
+                "longitude" : 47.226220,
+                "latitude" : -1.575805
+            },
+            {
+                "id" : 3,
+                "name" : "tablet",
+                "longitude" : 47.228220,
+                "latitude" : -1.552805
+            }
+        ]
     }
 ]
